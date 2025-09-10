@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Music Website</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav>
+  <div class="logo">GWAN</div>
+  <ul id="navLinks">
+    <li><a href="#home">Home</a></li>
+    <li><a href="#about">About Me</a></li>
+    <li><a href="#ministry">Ministry</a></li>
+    <li><a href="#bookings">Bookings</a></li>
+    <li><a href="#video">Videos</a></li>
+    <li><a href="#audio">Audio Music</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#donate">Donate / Download</a></li>
+  </ul>
+
+  <!-- Dark Mode Toggle Icon -->
+  <button id="modeToggle" class="icon-btn">🌙</button>
+
+  <!-- Hamburger -->
+  <span class="menu-toggle" id="menuToggle">☰</span>
+</nav>
+
+
+
+  <!-- Home -->
+  <section id="home" class="hero">
+    <div class="hero-content">
+      <h1>Experience the Power of Worship</h1>
+      <p>Music that uplifts, inspires, and connects hearts to God.</p>
+      <button class="btn" id="subscribeBtn">Subscribe</button>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Me</h2>
+    <div class="about-container">
+      <img src="image/gwan1.jpeg" alt="Owner">
+      <div class="about-text">
+        <p>Hello! My name is <strong>GWAN</strong>. I am a worship leader, songwriter, and minister dedicated to using music to glorify God.</p>
+        <p>Through this ministry, I aim to raise a generation that worships in spirit and truth.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Ministry -->
+  <section id="ministry">
+    <h2>Worship in Extreme Network</h2>
+    <div class="ministry-content">
+      <div class="ministry-text">
+        <p>Our ministry is dedicated to raising passionate worshippers, spreading hope and love through music and the word of God.</p>
+        <p>We touch lives through worship experiences, music outreach, and community impact programs.</p>
+      </div>
+
+      <div class="ministry-media">
+        <img src="image/gwan2.jpeg" alt="Ministry Event">
+        <img src="image/gwan3.jpeg" alt="Worship">
+      </div>
+
+      <div class="ministry-audio">
+        <h3>Listen to Our Worship</h3>
+        <ul>
+          <li>
+            <p>Song 1 - Worship Anthem</p>
+            <audio controls><source src="songs/song1.mp3" type="audio/mpeg"></audio>
+          </li>
+          <li>
+            <p>Song 2 - Praise Melody</p>
+            <audio controls><source src="songs/song2.mp3" type="audio/mpeg"></audio>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Bookings -->
+  <section id="bookings">
+    <h2>Bookings</h2>
+    <p>I am available for church events, worship nights, conferences, and concerts.  
+       Fill out the form to invite me.</p>
+    <form class="booking-form">
+      <label for="name">Full Name</label>
+      <input type="text" id="name" required>
+      <label for="email">Email</label>
+      <input type="email" id="email" required>
+      <label for="event">Event Details</label>
+      <textarea id="event" rows="4" required></textarea>
+      <button type="submit" class="btn">Send Request</button>
+    </form>
+  </section>
+
+  <!-- Videos -->
+  <section id="video">
+    <h2>Videos</h2>
+    <div class="video-list">
+      <div class="video-item">
+        <h4>Live Worship 1</h4>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID1" allowfullscreen></iframe>
+      </div>
+      <div class="video-item">
+        <h4>Live Worship 2</h4>
+        <iframe src="https://www.youtube.com/embed/VIDEO_ID2" allowfullscreen></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- Audio -->
+  <section id="audio">
+    <h2>Audio Music</h2>
+    <div class="music-list">
+      <div class="music-item">
+        <h4>Song Title 1</h4>
+        <audio controls><source src="songs/song1.mp3" type="audio/mpeg"></audio>
+      </div>
+      <div class="music-item">
+        <h4>Song Title 2</h4>
+        <audio controls><source src="songs/song2.mp3" type="audio/mpeg"></audio>
+      </div>
+    </div>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <div class="gallery">
+      <img src="image/gwan1.jpeg" alt="Gallery 1">
+      <img src="image/gwan2.jpeg" alt="Gallery 2">
+      <img src="image/gwan3.jpeg" alt="Gallery 3">
+    </div>
+  </section>
+
+  <!-- Donate -->
+  <section id="donate">
+    <h2>Support the Ministry</h2>
+    <p>Your donations help spread the gospel through music.</p>
+    <a href="#" class="btn">Donate</a>
+    <a href="#" class="btn">Download Album</a>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 GWAN Music | All Rights Reserved</p>
+  </footer>
+
+  <!-- Subscribe Popup -->
+  <div id="popup" class="popup">
+    <div class="popup-content">
+      <span class="close-btn">&times;</span>
+      <h2>Subscribe</h2>
+      <p>Get updates to your email about new music & events.</p>
+      <input type="email" id="subscriberEmail" placeholder="Enter your email">
+      <button id="subscribeConfirm" class="btn">Subscribe</button>
+      <p id="subscribeMsg" style="margin-top:10px; color:green; display:none;">✅ Subscribed successfully!</p>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
