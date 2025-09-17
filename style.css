@@ -36,7 +36,7 @@ nav {
 
 /* Nav links */
 .nav-links {
-  /* display: flex; */
+  display: flex;
   list-style: none;
   height: auto;
   transition: max-height 0.4s ease-in-out;
@@ -81,7 +81,7 @@ nav {
   .nav-links {
     position: absolute;
     right: 0;
-    top: 70px;
+    top: 60px;
     background: rgba(255, 255, 255, 0.08);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
@@ -660,3 +660,4 @@ nav {
     font-size: 0.95rem;
   }
 }
+
