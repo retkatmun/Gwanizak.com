@@ -1,0 +1,203 @@
+/* Downloads Page */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(135deg, #0f2027, #203a43, #2c5364);
+  color: #fff;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 10%;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+nav .logo a {
+  color: #ffd700;
+  font-size: 1.4rem;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover,
+.nav-links li a.active {
+  color: #ffd700;
+}
+
+/* Downloads Section */
+.downloads {
+  padding: 60px 10%;
+  text-align: center;
+}
+
+.downloads h1 {
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  background: linear-gradient(45deg, #ffd700, #ff6a00);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.downloads p {
+  margin-bottom: 40px;
+  font-size: 1.1rem;
+  color: #ddd;
+}
+
+.download-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+}
+
+.download-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 20px;
+  border-radius: 15px;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.5);
+}
+
+.download-card h3 {
+  margin-bottom: 15px;
+  font-size: 1.3rem;
+  color: #ffd700;
+}
+
+.download-card audio,
+.download-card video {
+  width: 100%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.download-card .btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ff6a00, #ffd700);
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.download-card .btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 106, 0, 0.4);
+}
+
+/* ================= Responsive ================= */
+
+/* Tablets */
+@media (max-width: 992px) {
+  nav {
+    padding: 15px 5%;
+  }
+
+  .downloads {
+    padding: 50px 5%;
+  }
+
+  .downloads h1 {
+    font-size: 2rem;
+  }
+
+  .downloads p {
+    font-size: 1rem;
+  }
+
+  .download-container {
+    gap: 20px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 600px) {
+  nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .downloads {
+    padding: 40px 20px;
+  }
+
+  .downloads h1 {
+    font-size: 1.6rem;
+  }
+
+  .downloads p {
+    font-size: 0.9rem;
+  }
+
+  .download-card {
+    padding: 15px;
+  }
+
+  .download-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .download-card .btn {
+    padding: 8px 15px;
+    font-size: 0.9rem;
+  }
+}
+
+/* Back Home Section */
+.back-home {
+  text-align: center;
+  margin: 50px 0;
+}
+
+.btn-home {
+  display: inline-block;
+  padding: 12px 25px;
+  border-radius: 8px;
+  background: linear-gradient(45deg, #ffd700, #ff6a00);
+  color: #111;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn-home:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 106, 0, 0.4);
+}
+
+/* Responsive for mobile */
+@media (max-width: 600px) {
+  .btn-home {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}
