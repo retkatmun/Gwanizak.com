@@ -36,8 +36,9 @@ nav {
 
 /* Nav links */
 .nav-links {
-  display: flex;
+  /* display: flex; */
   list-style: none;
+  height: auto;
   transition: max-height 0.4s ease-in-out;
   padding-left: 10px;
 }
@@ -581,5 +582,81 @@ nav {
   .donation-text p,
   .donation-details ul {
     text-align: center;
+  }
+}
+
+/* Donate Section */
+.donate {
+  padding: 60px 10%;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-radius: 15px;
+  margin: 50px auto;
+  max-width: 700px;
+  box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+}
+
+.donate h2 {
+  font-size: 2rem;
+  margin-bottom: 15px;
+  color: #ffd700;
+}
+
+.donate p {
+  font-size: 1.1rem;
+  margin-bottom: 20px;
+  color: #eee;
+}
+
+.bank-details {
+  background: rgba(255, 255, 255, 0.08);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+}
+
+.bank-details p {
+  margin: 8px 0;
+  font-size: 1rem;
+  color: #fff;
+}
+
+.bank-details strong {
+  color: #ffd700;
+}
+
+/* Copy Button */
+.bank-details button {
+  margin-top: 15px;
+  padding: 10px 20px;
+  background: linear-gradient(45deg, #ff6a00, #ffd700);
+  border: none;
+  border-radius: 8px;
+  color: #111;
+  font-weight: bold;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.bank-details button:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 15px rgba(255, 106, 0, 0.4);
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .donate {
+    padding: 40px 5%;
+  }
+
+  .donate h2 {
+    font-size: 1.6rem;
+  }
+
+  .bank-details p {
+    font-size: 0.95rem;
   }
 }
