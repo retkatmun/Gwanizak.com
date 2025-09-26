@@ -661,7 +661,7 @@ nav {
     font-size: 0.95rem;
   }
 }
-/* 
+
 .gallery {
   padding: 60px 10%;
   text-align: center;
@@ -708,8 +708,8 @@ nav {
   transform: scale(1.1);
 }
 
-/* 📱 Responsive tweaks */
-/* @media (max-width: 768px) {
+ 📱 Responsive tweaks */
+ @media (max-width: 768px) {
   .gallery h1 {
     font-size: 2rem;
   }
@@ -728,9 +728,9 @@ nav {
   .gallery-grid {
     grid-template-columns: 1fr;
   }
-} */
+} 
  
-/* Gallery Grid */
+Gallery Grid 
 .gallery-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
