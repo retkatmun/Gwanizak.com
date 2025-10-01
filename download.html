@@ -7,22 +7,36 @@
   <link rel="stylesheet" href="download.css">
 </head>
 <body>
+
+<!-- Dark Mode Toggle -->
+<div class="dark-toggle">
+  <button id="darkModeBtn">🌙</button>
+</div>
+
+<!-- Back to Home -->
 <section class="back-home">
   <a href="index.html" class="btn-home">⬅ Back to Home</a>
 </section>
- <section class="downloads">
+
+<!-- Download Section -->
+<section class="downloads">
   <h1>Download Center</h1>
   <p>Here you can find our latest worship music and video resources.</p>
 
+  <!-- 🔍 Search Bar -->
+  <div class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search songs or videos...">
+  </div>
+
+  <!-- AUDIO DOWNLOADS -->
   <h2>🎵 Audio Downloads</h2>
-  <div class="download-container">
-    <!-- 20 Audio Items -->
+  <div class="download-container" id="audioList">
     <div class="download-card">
       <h3>Worship Song 1</h3>
       <audio controls>
         <source src="media/audio/song1.mp3" type="audio/mpeg">
       </audio>
-      <a href="media/audio/song1.mp3" download class="btn">Download Audio</a>
+      <a href="media/audio/song1.mp3" download class="btn">⬇️ Download Audio</a>
     </div>
 
     <div class="download-card">
@@ -30,217 +44,45 @@
       <audio controls>
         <source src="media/audio/song2.mp3" type="audio/mpeg">
       </audio>
-      <a href="media/audio/song2.mp3" download class="btn">Download Audio</a>
+      <a href="media/audio/song2.mp3" download class="btn">⬇️ Download Audio</a>
     </div>
 
-    <div class="download-card">
-      <h3>Worship Song 3</h3>
-      <audio controls>
-        <source src="media/audio/song3.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song3.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 4</h3>
-      <audio controls>
-        <source src="media/audio/song4.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song4.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 5</h3>
-      <audio controls>
-        <source src="media/audio/song5.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song5.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 6</h3>
-      <audio controls>
-        <source src="media/audio/song6.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song6.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 7</h3>
-      <audio controls>
-        <source src="media/audio/song7.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song7.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 8</h3>
-      <audio controls>
-        <source src="media/audio/song8.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song8.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 9</h3>
-      <audio controls>
-        <source src="media/audio/song9.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song9.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 10</h3>
-      <audio controls>
-        <source src="media/audio/song10.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song10.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 11</h3>
-      <audio controls>
-        <source src="media/audio/song11.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song11.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 12</h3>
-      <audio controls>
-        <source src="media/audio/song12.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song12.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 13</h3>
-      <audio controls>
-        <source src="media/audio/song13.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song13.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 14</h3>
-      <audio controls>
-        <source src="media/audio/song14.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song14.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 15</h3>
-      <audio controls>
-        <source src="media/audio/song15.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song15.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 16</h3>
-      <audio controls>
-        <source src="media/audio/song16.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song16.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 17</h3>
-      <audio controls>
-        <source src="media/audio/song17.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song17.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 18</h3>
-      <audio controls>
-        <source src="media/audio/song18.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song18.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 19</h3>
-      <audio controls>
-        <source src="media/audio/song19.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song19.mp3" download class="btn">Download Audio</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Song 20</h3>
-      <audio controls>
-        <source src="media/audio/song20.mp3" type="audio/mpeg">
-      </audio>
-      <a href="media/audio/song20.mp3" download class="btn">Download Audio</a>
+    <!-- Download All Songs -->
+    <div class="download-card all-download">
+      <h3>All Worship Songs</h3>
+      <p>Download all songs in one ZIP file.</p>
+      <a href="media/audio/all_songs.zip" download class="btn big-btn">⬇️ Download All Songs</a>
     </div>
   </div>
 
+  <!-- VIDEO DOWNLOADS -->
   <h2>🎬 Video Downloads</h2>
-  <div class="download-container">
-    <!-- 30 Video Items -->
-    <!-- Repeat pattern up to Video 30 -->
+  <div class="download-container" id="videoList">
     <div class="download-card">
       <h3>Worship Video 1</h3>
-      <video controls>
+      <video controls width="100%">
         <source src="media/video/video1.mp4" type="video/mp4">
       </video>
-      <a href="media/video/video1.mp4" download class="btn">Download Video</a>
+      <a href="media/video/video1.mp4" download class="btn">⬇️ Download Video</a>
     </div>
 
     <div class="download-card">
       <h3>Worship Video 2</h3>
-      <video controls>
+      <video controls width="100%">
         <source src="media/video/video2.mp4" type="video/mp4">
       </video>
-      <a href="media/video/video2.mp4" download class="btn">Download Video</a>
+      <a href="media/video/video2.mp4" download class="btn">⬇️ Download Video</a>
     </div>
 
-    <div class="download-card">
-      <h3>Worship Video 3</h3>
-      <video controls>
-        <source src="media/video/video3.mp4" type="video/mp4">
-      </video>
-      <a href="media/video/video3.mp4" download class="btn">Download Video</a>
+    <!-- Download All Videos -->
+    <div class="download-card all-download">
+      <h3>All Worship Videos</h3>
+      <p>Download all videos in one ZIP file.</p>
+      <a href="media/video/all_videos.zip" download class="btn big-btn">⬇️ Download All Videos</a>
     </div>
-
-     <div class="download-card">
-      <h3>Worship Video 3</h3>
-      <video controls>
-        <source src="media/video/video3.mp4" type="video/mp4">
-      </video>
-      <a href="media/video/video3.mp4" download class="btn">Download Video</a>
-    </div>
-
-    <div class="download-card">
-      <h3>Worship Video 3</h3>
-      <video controls>
-        <source src="media/video/video3.mp4" type="video/mp4">
-      </video>
-      <a href="media/video/video3.mp4" download class="btn">Download Video</a>
-    </div>
- 
-     <div class="download-card">
-      <h3>Worship Video 3</h3>
-      <video controls>
-        <source src="media/video/video3.mp4" type="video/mp4">
-      </video>
-      <a href="media/video/video3.mp4" download class="btn">Download Video</a>
-    </div>
-
-     <div class="download-card">
-      <h3>Worship Video 3</h3>
-      <video controls>
-        <source src="media/video/video3.mp4" type="video/mp4">
-      </video>
-      <a href="media/video/video3.mp4" download class="btn">Download Video</a>
-    </div>
-
-    <!-- continue same pattern up to Video 30 -->
   </div>
 </section>
 
+<script src="download.js"></script>
 </body>
 </html>
